@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "4352d0ec4c4353c9",
+        "id": "cac6d22124147ccc",
         "type": "tabs",
         "children": [
           {
-            "id": "bfeb2a4f9124919d",
+            "id": "890e977d1ad9a917",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "Prior GitHub Repos.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "Prior GitHub Repos"
             }
           }
         ]
@@ -196,11 +196,16 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "bfeb2a4f9124919d",
+  "active": "375a96ef6731aa33",
   "lastOpenFiles": [
-    "Untitled.md",
-    "_Resources/Templates/Templater.new.md",
+    "Reference Documents/North-American-Charging-Standard-Technical-Specification-TS-0023666.pdf",
+    "Reference Documents/README.md",
+    "Prior GitHub Repos.md",
     "README.md",
+    "Fibersim Basics Tutorial (UPDATED_2024) (1).pdf",
+    "Daily/2025-11-14.md",
+    "Reference Documents",
+    "_Resources/Templates/Templater.new.md",
     "_Resources/Templates",
     "_Resources/Attatchments",
     "_Resources",
