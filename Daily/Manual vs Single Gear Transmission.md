@@ -2,7 +2,7 @@ I want to acknowledge the fact that a single speed gearbox for an EV is perfect.
 
 I am going to start with all the info about the two options and how they interact with the transmissions. To start there is a chart of the Nissan leaf's 80kW motor output. This is going to be critical to keep in mind as I document each transmission and the RPMs needed for driving.
 
-![[Pasted image 20260106114501.png]]
+![[EM57_EfficencyTorqueRPM.PNG]]
 
 I have 185/60R14 tires on the car currently.
 
@@ -14,8 +14,7 @@ Big downside is the torque steering. I would need to limit torque in software to
 
 Ratios: 2.92/1.764/1.181/.846/.714 F/D 4.428
 
-![[CRX Speed 1.png]]
-
+![[CRX Speed.png]]
 ### **Leaf Single speed Transmission:**
 
 This gearbox was designed by Nissan for this motor. The biggest pro is simplicity, maintaining the transmission is super easy and there is no risk of burning out the clutch or incorrectly shifting. The other big pro is weight saving up to 100lbs by using this transmission. 
