@@ -11,3 +11,6 @@ Tasks:
 * Match spacing in EM57 Motor adapter mounting plates to D15 measurements. 
 * Order adapter mounting plates
 
+Notes from 1/18/26
+The Inverter hangs over the output of the motor, When designing the adapter plates I need to ensure that the flywheel and clutch do not interfere with the inverter enclosure.
+
