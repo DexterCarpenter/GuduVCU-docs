@@ -25,3 +25,18 @@ Something we will need to test is if the control boards can communicate VIA CAN 
 
 ### Gudu's Implementation
 The main thing to keep in mind is that I want to keep the car as mechanical as possible. Giving the electronics control to the VCU for motor and battery control. Keeping the brakes, lights, and fans isolated from the VCU in their original form. Most EVs have states for park and reverse. Because the car is keeping the manual transmission I don't need reverse, I will just shift. On the other side is park, which might be useful but I can just put the car in neutral. I would prefer that if the car is on it is ready to drive. 
+
+## Functions/ Features
+
+When the controller turns on it will have some checks to do then enter standby.
+
+Every time the controller connects the battery to the PDM it **NEEDS** to go through a Precharge cycle. The states the require this are entering drive and when charging. 
+
+When the vehicle is in Drive mode, signaled by the cars ignition being on it first needs to Precharge. 
+In the loop it needs to...
+* Get data from the PDM and Inverter for their temperatures and adjust the water pump (PWM) accordingly
+* Read the throttle position from the two throttle sensors and send CAN messages to the inverter with the throttle amount
+* Monitor battery charge levels from the BMS over CAN and display 
+
+The vehicle has a charge mode, this is triggered by .... after connecting the J1772 to the PDM. If the car is able to charge it turns on the M/C switch (Motor Cutoff) which immobilizes the motor and enables the battery controller. The precharge routine needs to run to connect the battery to the PDM. With the car in this state the inverter should not be able to run, even if the ignition is turned on. 
+* Get the current state of charge of the battery and stop the battery from charging at %80 when the juice switch is flipped.
